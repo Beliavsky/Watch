@@ -3,7 +3,7 @@ program xwatch
 use kind_mod , only: dp
 use watch_mod, only: watch,print_elapsed_times
 implicit none
-integer          , parameter :: n = 10**7, iunit = 20
+integer          , parameter :: n = 5*10**7, iunit = 20
 character (len=*), parameter :: xfile = "temp.bin"
 real(kind=dp)                :: x(n),xchk(n)
 call random_seed()
